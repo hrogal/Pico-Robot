@@ -36,9 +36,9 @@ while True:
     if value != None:
         print(value)
         #display press
-        if value == 64:
+        if value == 1:
             i = 0
-            while value == 64:
+            while value == 1:
                 value = Ir.Getir()
                 Motor.Car_Run(255,255)
                 if times_ > 1:
@@ -80,9 +80,9 @@ while True:
             oled.text('Run', 0, 0)
             oled.show()
             oled.fill(0)
-        elif value == 7:
+        elif value == 4:
             i = 0
-            while value == 7:
+            while value == 4:
                 value = Ir.Getir()
                 Motor.Car_Left(130,130)
                 if times_ > 1:
@@ -102,9 +102,9 @@ while True:
             oled.text('Left', 0, 0)
             oled.show()
             oled.fill(0)
-        elif value == 9:
+        elif value == 6:
             i = 8
-            while value == 9:
+            while value == 6:
                 value = Ir.Getir()
                 Motor.Car_Right(130,130)
                 if times_ > 1:
@@ -124,8 +124,8 @@ while True:
             oled.text('Right', 0, 0)
             oled.show()
             oled.fill(0)
-        elif value == 21:
-            while value == 21:
+        elif value == 5:
+            while value == 5:
                 value = Ir.Getir()
                 BZ.duty_u16(500)
                 BZ.freq(624)
@@ -133,9 +133,9 @@ while True:
             oled.text('Buzzer', 0, 0)
             oled.show()
             oled.fill(0)
-        elif value == 25:
+        elif value == 9:
             i = 0
-            while value == 25:
+            while value == 9:
                 value = Ir.Getir()
                 Motor.Car_Back(255,255)
                 if times_ > 1:
